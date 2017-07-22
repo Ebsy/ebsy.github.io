@@ -4,6 +4,9 @@
 }
 
 @media print {
+    a[href]:after {
+        content: none !important;
+    }
     .page {
         /*margin: 0.5cm;*/
         /*border: initial;
@@ -24,7 +27,7 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 400px) {
     .is-table-row {
         display: table;
     }
@@ -90,6 +93,11 @@ h3 {
     height: 100%;
 }
 
+.blue-left a {
+    text-decoration: none;
+    color: inherit !important;
+}
+
 .blue-left .fa:before {
     color: white !important;
 }
@@ -115,9 +123,4 @@ h3 {
     margin-top: 0px;
     background-color: white !important;
     padding: 20px;
-}
-
-
-}
-
 }
